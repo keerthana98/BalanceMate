@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance Mate"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:hint="   Enter email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/light_blue"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:hint="  Enter password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/light_blue"/>
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:backgroundTint="@color/lightdarkblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="15dp"
+            android:text="Signup" />
+        <TextView
+            android:text="Already Registered? Signin Here"
+            android:id="@+id/textViewSignin"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
